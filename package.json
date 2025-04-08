@@ -1,0 +1,30 @@
+{
+  "name": "electron-app",
+  "version": "1.0.0",
+  "description": "My Electron Test App",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "author": "Ali Pascal",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.1.0",
+    "electron-builder": "^23.6.0"
+  },
+  "build": {
+    "appId": "com.example.electronapp",
+    "productName": "ElectronTestApp",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "!dist"
+    ],
+    "win": {
+      "target": "nsis"
+    }
+  }
+}
